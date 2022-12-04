@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DetailVC.swift
 //  News
 //
 //  Created by Pasha Khorenko on 09.02.2022.
@@ -8,7 +8,7 @@
 import UIKit
 import SafariServices
 
-class ViewController: UIViewController {
+class DetailVC: UIViewController {
 
     var article: Article!
     

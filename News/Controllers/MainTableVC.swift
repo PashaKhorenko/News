@@ -1,5 +1,5 @@
 //
-//  TableViewController.swift
+//  MainTableVC.swift
 //  News
 //
 //  Created by Pasha Khorenko on 09.02.2022.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TableViewController: UITableViewController {
+class MainTableVC: UITableViewController {
 
     
     @IBAction func refreshControlAction(_ sender: UIRefreshControl) {
@@ -66,7 +66,7 @@ class TableViewController: UITableViewController {
             
             if let indexPath = tableView.indexPathForSelectedRow {
                 
-                (segue.destination as? ViewController)?.article = articles[indexPath.row]
+                (segue.destination as? DetailVC)?.article = articles[indexPath.row]
                 tableView.deselectRow(at: indexPath, animated: true)
             }
             
